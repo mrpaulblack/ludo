@@ -5,13 +5,15 @@ a small ludo clone written in c++
 
 ## Build
 ```git clone https://github.com/MrPaulBlack/ludo.git```
+
 ```cd ludo```
+
 ```g++ -Wall -std=c++11 Main.cpp -o ludo```
 
 
 
 ## Run
-./ludo
+```./ludo```
 
 
 
