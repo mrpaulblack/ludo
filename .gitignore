@@ -1,6 +1,7 @@
 #exclude build directorys
 /build
 /public
+/dist
 
 #exclude private directorys
 /.cache
