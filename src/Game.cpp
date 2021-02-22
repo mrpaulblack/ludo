@@ -76,7 +76,7 @@ int Game::getInput(int max) {
         inputOK = true;
         std::cout << "Please insert a int number between 1 and " << max << ":" << std::endl;
         std::getline(std::cin, input);
-        if (input.size() > 10) {
+        if (input.size() > 10 || input.size() <= 0) {
             inputOK = false;
             std::cout << "Character limit reached. Please type in a maximum of 10 characters." << std::endl;
         }
@@ -85,7 +85,7 @@ int Game::getInput(int max) {
                 checkInput = input.at(i);
                 if ((checkInput < 48 || checkInput > 57) && inputOK) {
                         inputOK = false;
-                        std::cout << "Illegal character. Plaese only type in a number." << std::endl;
+                        std::cout << "Illegal character. Please only type in a number." << std::endl;
                 }
             }
         }
