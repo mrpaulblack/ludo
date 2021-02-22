@@ -3,7 +3,7 @@
 
 
 //define all objects globally so thay can be accessed by all functions in Main.cpp
-Game game(4, 0);                                                    //game objekt for round tracker and stuff like that
+Game game(0, 4);                                                    //game objekt for round tracker and stuff like that
 std::vector<Player> player(game.getPlayer() + game.getCPU(), 4);    //array with player objects
 Board board(game.getPlayer() + game.getCPU(), 10);                  //board object (constructor with num of player and size of board)
 
