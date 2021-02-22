@@ -4,5 +4,5 @@ g++ -Wall -std=c++11 src/Main.cpp -o ludo
 ### DEBUG
 g++ -g -Wall -std=c++11 src/Main.cpp -o ludo
 
-### WEBASSAMBLY WITH ENSCRIPTEN
+### WEBASSAMBLY WITH EMSCRIPTEN
 emcc -o index.html src/Main.cpp -O3 -s WASM=1 --shell-file html_template/shell_minimal.html
