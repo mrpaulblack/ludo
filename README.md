@@ -4,7 +4,7 @@ a small ludo clone written in c++
 
 
 
-## Build AND RUN LOCALLY
+## Build and run locally
 
 ```git clone https://github.com/MrPaulBlack/ludo.git```
 
