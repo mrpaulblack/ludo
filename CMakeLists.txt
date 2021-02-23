@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5.1)
-option(EMCC "Compiles to webasambly WASM with emcc" OFF)
+option(EMCC "Compiles to webassembly WASM with emcc" OFF)
 
 # set project name and add src
 project (ludo VERSION 1.0)

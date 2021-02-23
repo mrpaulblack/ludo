@@ -18,7 +18,7 @@ a small ludo clone written in c++
 
 
 
-## [EXPIREMENTAL] Build as Webassambly Project
+## [EXPIREMENTAL] Build as Webassembly Project
 
 * requires ```emscripten``` (https://emscripten.org/) as compiler
 
