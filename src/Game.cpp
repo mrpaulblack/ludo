@@ -18,7 +18,7 @@ Game::Game(size_t conRealPlayer, size_t conCPU) {
 
 
 
-int Game::getRound() {
+int Game::getRound() const {
     return gameRound;
 }
 
@@ -30,7 +30,7 @@ void Game::setRound() {
 
 
 
-int Game::getWon() {
+int Game::getWon() const {
     return gameWonPlayer;
 }
 
@@ -51,7 +51,7 @@ void Game::setWon(int player) {
 
 
 
-int Game::getDice() {
+int Game::getDice() const {
     return currentDice;
 }
 
@@ -68,7 +68,7 @@ void Game::setDice(bool start) {
 
 
 
-int Game::getInput(int max) {
+int Game::getInput(int max) const {
     bool inputOK;               // control while loop until true for the while loop inside getInput function
     std::string input;          // actual input by player
     char checkInput;            // individual character from string array
@@ -101,7 +101,7 @@ int Game::getInput(int max) {
 
 
 
-int Game::getRandom() {
+int Game::getRandom() const {
     return randomInt;
  }
 
@@ -122,12 +122,12 @@ void Game::setRandom(int max) {
 
 
 
-size_t Game::getPlayer() {
+size_t Game::getPlayer() const {
     return realPlayer;
 }
 
 
 
-size_t Game::getCPU() {
+size_t Game::getCPU() const {
     return cpu;
 }

@@ -18,7 +18,7 @@ Player::Player(int figure) {
 
 
 
-bool Player::getStartFull() {
+bool Player::getStartFull() const {
     if (figureAvail == defaultFigureAvail) {
         return true;
     }
@@ -27,13 +27,13 @@ bool Player::getStartFull() {
 
 
 
-int Player::getStart() {
+int Player::getStart() const {
     return figureAvail;
 }
 
 
 
-int Player::getFigure() {
+int Player::getFigure() const {
     return defaultFigureAvail;
 }
 
@@ -54,7 +54,7 @@ void Player::setStart(int numFigure) {
 
 
 
-bool Player::getEnd(size_t position) {
+bool Player::getEnd(size_t position) const {
     try {
         if (position < endCoor.size() && position >= 0) {
             return endCoor[position];
@@ -69,7 +69,7 @@ bool Player::getEnd(size_t position) {
 
 
 
-int Player::getFigureEnd() {
+int Player::getFigureEnd() const {
     int counter = 0;
     for (size_t i = 0; i < endCoor.size(); i++) {
         if (endCoor[i]) {
@@ -99,7 +99,7 @@ void Player::setEnd(size_t position , bool move) {
 
 
 
-bool Player::getFullEnd() {
+bool Player::getFullEnd() const {
     bool checkFull = true;
     for (size_t i = 0; i < endCoor.size(); i++) {
         if (!endCoor[i]) {
@@ -112,7 +112,7 @@ bool Player::getFullEnd() {
 
 
 
-void Player::printEnd() {
+void Player::printEnd() const {
     for (size_t i = 0; i < endCoor.size(); i++) {
         if (!endCoor[i]) {
             std::cout << std::setw(4) << ".";

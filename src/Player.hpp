@@ -45,7 +45,7 @@ class Player {
         * @return true if player start is full; false if not
         * @author Paul Braeuning
         */
-        bool getStartFull();
+        bool getStartFull() const;
 
 
         /**
@@ -57,7 +57,7 @@ class Player {
         * @return int number of figures in player start; 0 when none
         * @author Paul Braeuning
         */
-        int getStart();
+        int getStart() const;
 
 
         /**
@@ -69,7 +69,7 @@ class Player {
         * @return amount of fiures as int
         * @author Paul Braeuning
         */
-        int getFigure();
+        int getFigure() const;
 
 
         /**
@@ -94,7 +94,7 @@ class Player {
         * @pre needs to be a valid index of endCoor vector (so from 0 to amount fo figures -1)
         * @author Paul Braeuning
         */
-        bool getEnd(size_t);
+        bool getEnd(size_t) const;
 
 
         /**
@@ -106,7 +106,7 @@ class Player {
         * @return int amount of figures in player's end; 0 if none
         * @author Paul Braeuning
         */
-        int getFigureEnd();
+        int getFigureEnd() const;
 
 
         /**
@@ -132,7 +132,7 @@ class Player {
         * @return bool true if player end is full and false if not
         * @author Paul Braeuning
         */
-        bool getFullEnd();
+        bool getFullEnd() const;
 
 
         /**
@@ -142,5 +142,5 @@ class Player {
         *
         * @author Paul Braeuning
         */
-        void printEnd();
+        void printEnd() const;
 };

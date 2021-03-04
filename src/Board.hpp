@@ -47,7 +47,7 @@ class Board {
         * @pre position must be bigger then 0 and smaller then board size
         * @author Paul Braeuning
         */
-        int getPlayer(size_t position);
+        int getPlayer(size_t position) const;
 
 
         /**
@@ -61,7 +61,7 @@ class Board {
         * @pre player must be valid and bigger 0
         * @author Paul Braeuning
         */
-        int getBoardSize(size_t player);
+        int getBoardSize(size_t player) const;
 
 
         /**
@@ -77,7 +77,7 @@ class Board {
         * @pre valid player; oldPosition needs to be on the board; dice needs to be >= 0
         * @author Paul Braeuning
         */
-        int getNewPosition(size_t player, int oldPosition, int dice);
+        int getNewPosition(size_t player, int oldPosition, int dice) const;
 
 
         /**
@@ -93,7 +93,7 @@ class Board {
         * @pre valid player; oldPosition needs to be on the board; dice needs to be >= 0
         * @author Paul Braeuning
         */
-        int getOutOfBound(size_t player, int oldPosition, int dice);
+        int getOutOfBound(size_t player, int oldPosition, int dice) const;
 
 
         /**
@@ -108,7 +108,7 @@ class Board {
         * @pre player needs to be valid and dice must be >= 0
         * @author Paul Braeuning
         */
-        int getStartPosition(size_t player, size_t dice);
+        int getStartPosition(size_t player, size_t dice) const;
 
 
         /**
@@ -138,7 +138,7 @@ class Board {
         * @pre must be a valid player and the figure of tha player must exist on the board
         * @author Paul Braeuning
         */
-        int getPosition(int player, int figure);
+        int getPosition(int player, int figure) const;
 
 
         /**
@@ -178,5 +178,5 @@ class Board {
         *
         * @author Paul Braeuning
         */
-        void printBoard();
+        void printBoard() const;
 };

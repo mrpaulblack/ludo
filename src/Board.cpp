@@ -21,7 +21,7 @@ Board::Board(int player, int gap) {
 
 
 
-int Board::getPlayer(size_t position) {
+int Board::getPlayer(size_t position) const {
     try {
         if (position < board.size() && position >= 0) {
             return board[position];
@@ -36,7 +36,7 @@ int Board::getPlayer(size_t position) {
 
 
 
-int Board::getBoardSize(size_t player) {
+int Board::getBoardSize(size_t player) const {
     try {
         if (player == 0) {
             return board.size() -1;
@@ -54,7 +54,7 @@ int Board::getBoardSize(size_t player) {
 
 
 
-int Board::getNewPosition(size_t player, int oldPosition, int dice) {
+int Board::getNewPosition(size_t player, int oldPosition, int dice) const {
     try {
         if (player*boardGap < board.size() && player >= 0) {
             if (player == 0) {
@@ -87,7 +87,7 @@ int Board::getNewPosition(size_t player, int oldPosition, int dice) {
 
 
 
-int Board::getOutOfBound(size_t player, int oldPosition, int dice) {
+int Board::getOutOfBound(size_t player, int oldPosition, int dice) const {
     try {
         if (player*boardGap < board.size() && player >= 0) {
             return -1 * (getBoardSize(player) -oldPosition -dice);
@@ -102,7 +102,7 @@ int Board::getOutOfBound(size_t player, int oldPosition, int dice) {
 
 
 
-int Board::getStartPosition(size_t player, size_t dice) {
+int Board::getStartPosition(size_t player, size_t dice) const {
     dice -= 1;
     try {
         if ((player * boardGap) + dice < board.size() && dice >= 0) {
@@ -148,7 +148,7 @@ int Board::setStartPosition(size_t player, size_t dice) {
 
 
 
-int Board::getPosition(int player, int figure) {
+int Board::getPosition(int player, int figure) const {
     try{
         int counter = 0;
         for (size_t n = 0; n < board.size(); n++) {
@@ -208,7 +208,7 @@ void Board::deletePosition(size_t position) {
 
 
 
-void Board::printBoard() {
+void Board::printBoard() const {
     for (size_t i = 0; i < (board.size() / boardGap); i++) {
         std::cout << "P" << i +1 << " Start: ";
         for (size_t n = i * boardGap; n < i * boardGap + boardGap; n++) {

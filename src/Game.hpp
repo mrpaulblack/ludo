@@ -47,7 +47,7 @@ class Game {
         * @return the amount of rounds
         * @author Paul Braeuning
         */
-        int getRound();
+        int getRound() const;
 
 
         /**
@@ -68,7 +68,7 @@ class Game {
         * @return -1 or the paleyr that won
         * @author Paul Braeuning
         */
-        int getWon();
+        int getWon() const;
 
 
         /**
@@ -91,7 +91,7 @@ class Game {
         * @return current dice
         * @author Paul Braeuning
         */
-        int getDice();
+        int getDice() const;
 
 
         /**
@@ -118,7 +118,7 @@ class Game {
         * @pre int max needs to be a int > 0
         * @author Paul Braeuning
         */
-        int getInput(int);
+        int getInput(int) const;
 
 
         /**
@@ -129,7 +129,7 @@ class Game {
         * @return the generated random int
         * @author Paul Braeuning
         */
-        int getRandom();
+        int getRandom() const;
 
 
         /**
@@ -153,7 +153,7 @@ class Game {
         * @return number of real plaeyr as int
         * @author Paul Braeuning
         */
-        size_t getPlayer();
+        size_t getPlayer() const;
 
 
         /**
@@ -164,5 +164,5 @@ class Game {
         * @return number of real plaeyr as int
         * @author Paul Braeuning
         */
-        size_t getCPU();
+        size_t getCPU() const;
 };
