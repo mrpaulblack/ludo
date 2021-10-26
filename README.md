@@ -1,3 +1,5 @@
+### Archived due to beeing an old non maintained project.
+
 # ludo
 
 a small ludo clone written in c++
